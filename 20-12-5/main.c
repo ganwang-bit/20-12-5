@@ -1,0 +1,148 @@
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    printf("Hello world!\n");
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<string.h>
+//#include<errno.h>
+//int main()
+//{
+//    //向内存申请10个整形的空间
+////    int *p=(int*)malloc(sizeof(int)*10);
+//    int*p=(int*)calloc(10,sizeof(int));
+//    if(p==NULL)
+//    {
+//        printf("%s\n",strerror(errno));
+//    }
+//    else
+//    {
+//        int i;
+//        for(i=0;i<10;i++)
+//        {
+//            p[i]=i+1;
+//        }
+//        for(i=0;i<10;i++)
+//        {
+//            printf("%d\t",p[i]);
+//        }
+//    }
+//    p=(int*)realloc(p,40);
+//    free(p);
+//    p=NULL;
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<strin.h>
+//#include<errno.h>
+//int main()
+//{
+//    int *p=(int*)malloc(sizeof(int)*10)
+//    if(p==0)
+//    {
+//        printf("%s\n",strerror(errno));
+//    }
+//    else{}
+//    return 0;
+//}
+//int main()
+//{
+//    int*p=(int*)realloc(NULL,40);//malloc(40);
+//    free(p);
+//    p=NULL;
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//#include<string.h>
+//char* GetMemory()
+//{
+//    char*p=(char*)malloc(100);
+//    return p;
+//}
+//void Test(void)
+//{
+//    char*str=NULL;
+//    str=GetMemory();
+//    strcpy(str,"hello world");
+//    printf(str);
+//    free(str);
+//    str=NULL;
+//}
+//int main()
+//{
+//    Test();
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int a[5][5];
+//    int i,j;
+//    int sum[5]={0};
+//    for(i=0;i<5;i++)
+//    {
+//        for(j=0;j<5;j++)
+//        {
+//            scanf("%d",&a[i][j]);
+//        }
+//    }
+//    for(i=0;i<5;i++)
+//    {
+//        for(j=0;j<5;j++)
+//        {
+//            sum[i]=sum[i]+a[i][j];
+//        }
+//    }
+//    printf("ROW total:");
+//    for(i=0;i<5;i++)
+//        printf("%d ",sum[i]);
+//        printf("\n");
+//    int sum[5]={0};
+//    for(j=0;j<5;j++)
+//    {
+//        for(i=0;i<5;i++)
+//        {
+//            sum1[j]=sum1[j]+a[i][j];
+//        }
+//    }
+//    printf("COL total:");
+//    for(i=0;i<5;i++)
+//        printf("%d ",sum1[i]);
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//struct S
+//{
+//    int n;
+//    int arr[];
+//};
+//int main()
+//{
+//    struct S *ps=(struct S*)malloc(sizeof(struct S)+sizeof(int)*5);
+//    ps->n=100;
+//    int i=0;
+//    for(i=0;i<5;i++)
+//        ps->arr[i]=i;
+//    for(i=0;i<5;i++)
+//        printf("%d ",ps->arr[i]);
+//    return 0;
+//}
+//#include<stdio.h>
+//struct S
+//{
+//    int n;
+//    int*arr;
+//};
+//int main()
+//{
+//    struct S*ps=(struct S*)malloc(sizeof(struct S));
+//    ps->arr=(char*)malloc(sizeof(int)*25);
+//    return 0;
+//}
